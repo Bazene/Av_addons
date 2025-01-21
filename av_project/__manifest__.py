@@ -1,0 +1,25 @@
+{
+    "name": "Av Project",
+    "author":"Serge",
+    "version": "17.0.1.0",
+    "category": "Av Project",
+    "depends": ["base","mail","project"],
+    'license': 'LGPL-3',
+    "installable":True,
+    "application": True,
+    'summary': 'Manage project',
+    "description": """
+        A module for managing project.
+    """,
+    "data": [
+        # SECURITY
+        "security/res_groups.xml",
+        "security/ir.model.access.csv",
+
+        # VIEWS
+
+        # REPORT
+    ],
+    "demo":[
+    ],
+}
