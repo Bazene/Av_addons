@@ -6,7 +6,7 @@
     "depends": ["base","mail","project"],
     'license': 'LGPL-3',
     "installable":True,
-    "application": True,
+    "application": False,
     'summary': 'Manage project',
     "description": """
         A module for managing project.

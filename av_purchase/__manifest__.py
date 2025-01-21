@@ -6,7 +6,7 @@
     "depends": ["base","mail","purchase"],
     'license': 'LGPL-3',
     "installable":True,
-    "application": True,
+    "application": False,
     'summary': 'Manage purchases',
     "description": """
         A module for managing puchases.
