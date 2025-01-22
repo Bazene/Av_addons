@@ -1,8 +1,11 @@
-from odoo import models, fields
+from odoo import models
 
 
-class AvProject(models.Model):
-    # Meta attribute
+class Project(models.Model):
+    # Meta data
     _inherit="project.project"
 
     # Fields
+
+    # Functions
+
