@@ -17,6 +17,7 @@
         "security/ir.model.access.csv",
 
         # VIEWS
+        "views/project_project_views.xml",
 
         # REPORT
     ],

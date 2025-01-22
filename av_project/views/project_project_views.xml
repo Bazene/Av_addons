@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+    <data>
+        <record id="edit_project_extended" model="ir.ui.view">
+            <field name="name">edit.project.extended</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project" />
+            <field name="arch" type="xml">
+                <!-- Modify the 'user_id' field -->
+                <xpath expr="//field[@name='user_id']" position="attributes">
+                    <!-- Remove the domain on user_id -->
+                    <attribute name="domain">[]</attribute>
+                    <attribute name="widget">many2one_avatar_user</attribute>
+                    <attribute name="readonly">active</attribute>
+                </xpath>
+
+                <!-- Use xpath to position the new field at the end of the tree view -->
+                <xpath expr="//field[@name='date_start']" position="after">
+                    <field name="project_budget" widget="monetary"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="department_id" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
